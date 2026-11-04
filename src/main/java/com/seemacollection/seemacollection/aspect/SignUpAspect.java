@@ -1,17 +1,14 @@
 package com.seemacollection.seemacollection.aspect;
 
 import com.seemacollection.seemacollection.entity.SignUpCountEntity;
-import com.seemacollection.seemacollection.dao.AspectDao;
+import com.seemacollection.seemacollection.mysqldao.AspectDao;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.sql.Date;
 import java.time.LocalDate;
-import java.time.OffsetDateTime;
 import java.util.Optional;
 
 //@Component
@@ -61,4 +58,6 @@ public class SignUpAspect {
 //        long durationInNanoseconds = endTime - startTime;
 //        log.info("Time taken by: {} is {}", durationInNanoseconds/1000000, className+"."+methodName);
 //    }
+
+
 }

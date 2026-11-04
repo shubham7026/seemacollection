@@ -11,7 +11,7 @@ import java.sql.Date;
 @Entity
 @Getter
 @Setter
-@Table(name = "signUp_count")
+@Table(name = "signUp_counts")
 public class SignUpCountEntity {
 
     private int noOfSignUp;

@@ -1,16 +1,17 @@
 package com.seemacollection.seemacollection.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
+
+import java.util.List;
 
 @Entity
-@Table(schema = "user")
+@Table(name = "users")
 @Setter
 @Getter
+@ToString
 public class UserEntity {
 
     @Id
@@ -19,6 +20,14 @@ public class UserEntity {
     private String email;
     private String firstName;
     private String lastName;
-    private int points;
+    private Double points;
+    private boolean login;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "userEntity")
+//    @JoinColumns(value = {
+//            @JoinColumn(referencedColumnName = "plotNo"),
+//            @JoinColumn(referencedColumnName = "tehsil")
+//    })
+    private List<Address> addresses;
 
 }

@@ -15,5 +15,5 @@ import org.springframework.stereotype.Service;
 public class RewardPointService {
 
     @Value("${credit.points}")
-    private int points;
+    private Double points;
 }

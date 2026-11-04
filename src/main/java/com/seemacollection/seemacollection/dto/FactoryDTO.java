@@ -11,4 +11,10 @@ public class FactoryDTO {
     @Autowired
     private UserDTO userDTO;
 
+    @Autowired
+    private AddressDTO addressDTO;
+
+    @Autowired
+    private ProductDTO productDTO;
+
 }

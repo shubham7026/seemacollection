@@ -2,6 +2,8 @@ package com.seemacollection.seemacollection.dto;
 
 import lombok.*;
 
+import java.util.List;
+
 @Getter
 @Setter
 @ToString
@@ -12,5 +14,6 @@ public class UserDTO {
      private String email;
      private String password;
      private String lastName;
-     private int points;
+     private Double points;
+     private List<AddressDTO> addressDTO;
 }

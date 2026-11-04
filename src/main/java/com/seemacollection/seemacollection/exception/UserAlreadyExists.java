@@ -1,7 +1,11 @@
 package com.seemacollection.seemacollection.exception;
 
-public class UserAlreadyExists extends RuntimeException {
-    public UserAlreadyExists(String message) {
-        super(message);
+import org.springframework.http.HttpStatus;
+
+import java.util.HashMap;
+
+public class UserAlreadyExists extends AbstractException {
+    public UserAlreadyExists(String message, HttpStatus httpStatus) {
+        super(message,httpStatus);
     }
 }

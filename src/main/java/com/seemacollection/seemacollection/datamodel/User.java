@@ -1,16 +1,18 @@
 package com.seemacollection.seemacollection.datamodel;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
+
+import java.util.List;
 
 @Getter
-@RequiredArgsConstructor
+@Setter
+@Builder
 @ToString
 public class User {
-    final private String firstName;
-    final private String lastName;
-    final private String email;
-    final private String password;
+     private String firstName;
+     private String lastName;
+     private String email;
+     private String password;
+     private Double points;
+     private List<Address> address;
 }

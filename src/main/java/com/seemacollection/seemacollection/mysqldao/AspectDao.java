@@ -1,4 +1,4 @@
-package com.seemacollection.seemacollection.dao;
+package com.seemacollection.seemacollection.mysqldao;
 
 
 import com.seemacollection.seemacollection.entity.SignUpCountEntity;
